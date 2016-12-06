@@ -1,0 +1,54 @@
+/* some context */
+.elements {
+  position: relative;
+}
+.element {
+  width: 50%;
+  height: 100px;
+  background: red;
+  padding: 18px;
+  margin: 0 auto 9px auto;
+  text-align: center;
+}
+
+
+/*------------------------------------*\
+//    #PAGINATOR
+\*------------------------------------*/
+
+.paginator__nav {
+  margin: 0 auto;
+}
+
+.paginator__switch {
+  display: block;
+  padding: 9px;
+  margin: 9px;
+  border-radius: 5px;
+}
+  .paginator__switch.current {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  .paginator__switch.active {
+    cursor: pointer;
+  }
+    .paginator__switch.active:hover, .paginator__switch.active:active, .paginator__switch.active:focus {
+      color: white;
+      background-color: #009bf8;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.16);
+    }
+  .paginator.idle .paginator__switch.active {
+    cursor: default;
+  }
+    .paginator.idle .paginator__switch.active:hover, .paginator.idle .paginator__switch.active:active, .paginator.idle .paginator__switch.active:focus {
+      color: #009bf8;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  .paginator__switch.inactive {
+    visibility: hidden;
+  }
